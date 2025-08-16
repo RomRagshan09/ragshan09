@@ -6,63 +6,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f9fafb;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #4f46e5, #9333ea, #06b6d4);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
       color: #111;
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      text-align: center;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
     }
     header {
-      background: #4f46e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      padding: 3rem 1rem;
       color: white;
-      padding: 2rem 1rem;
+      text-align: left;
+      gap: 2rem;
+    }
+    header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    }
+    header .info {
+      max-width: 600px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      line-height: 1.5;
     }
     section {
-      padding: 3rem 1rem;
-      max-width: 700px;
-      margin: auto;
+      background: white;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 800px;
+      box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
     }
-    h1, h2 {
+    section h2 {
+      color: #4f46e5;
       margin-bottom: 1rem;
     }
     footer {
+      text-align: center;
       background: #111;
       color: #aaa;
       padding: 1rem;
       font-size: 0.9rem;
     }
+    a { color: #4f46e5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
+
+  <!-- Hero/Profile Section -->
   <header>
-    <h1>Manimaran Ranjith Kumara</h1>
-    <p>Junior Data Analyst | Data Analytics & Forecasting | Python & R | Supply Chain</p>
+    <!-- Left: Profile Picture -->
+    <img src="raln.jpg" alt="Profile Picture">
+    <!-- Right: Info -->
+    <div class="info">
+      <h1>Chandrasekaram Ragshan</h1>
+      <p><b>Junior Data Analyst</b><br>
+      Skilled in Data Analytics, Forecasting, Machine Learning, Deep Learning, Python, R, and Supply Chain Management.<br>
+      Passionate about building solutions with BI tools and advanced inventory planning.</p>
+    </div>
   </header>
 
+  <!-- Sections -->
   <section>
     <h2>🚀 Building</h2>
-    <p>I’m currently building my portfolio with projects in forecasting, machine learning, and supply chain analytics.</p>
+    <p>I’m currently building my portfolio with projects in forecasting, machine learning, BI dashboards, and supply chain analytics.</p>
   </section>
 
   <section>
     <h2>📜 Licensing</h2>
-    <p>Content and code shared here are licensed under the MIT License. Feel free to use with attribution.</p>
+    <p>All content and code shared here are licensed under the MIT License. You are free to use with attribution.</p>
   </section>
 
   <section>
     <h2>📬 Contact</h2>
-    <p>Email: <a href="mailto:YOUR@EMAIL.com">YOUR@EMAIL.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/YOUR-LINK/" target="_blank">linkedin.com/in/YOUR-LINK</a></p>
-    <p>GitHub: <a href="https://github.com/YOUR-USERNAME" target="_blank">github.com/YOUR-USERNAME</a></p>
+    <p>Email: <a href="ragshan952@gmail.com">YOUR@EMAIL.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ragshan-chandrasekaram/" target="_blank">linkedin.com/in/YOUR-LINK</a></p>
+    <p>GitHub: <a href="https://github.com/RomRagshan09 target="_blank">github.com/YOUR-USERNAME</a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
-    © <span id="y"></span> Manimaran Ranjith Kumara. All rights reserved.
+    © <span id="y"></span> Chandrasekaram Ragshan. All rights reserved.
   </footer>
 
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-
